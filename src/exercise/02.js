@@ -91,7 +91,7 @@ function PokemonInfo({pokemonName}) {
     }
     run(fetchPokemon(pokemonName))
   }, [pokemonName, run])
-
+ 
   if (status === 'idle' || !pokemonName) {
     return 'Submit a pokemon'
   } else if (status === 'pending') {
